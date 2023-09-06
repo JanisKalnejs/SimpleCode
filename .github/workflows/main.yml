@@ -1,0 +1,12 @@
+name: learn-github-actions
+on:[push]
+jobs:
+	run-my-workflow:
+ 		runs-on: ubuntu-latest
+	 	steps:
+	 		-name: Step1 - define Python version
+				run: python -- version
+			-name: Step2 - Hello Step
+	 			run: echo "Hello Step!"
+		 	-name: Step3 - Hello World
+	 			run: echo "Hello World!"	
